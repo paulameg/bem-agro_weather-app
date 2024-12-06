@@ -7,7 +7,7 @@ import { WeatherService } from '../../services/weather.service';
 @Component({
   selector: 'app-weather-card',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MapComponent],
+  imports: [CommonModule, MatCardModule],
   templateUrl: './weather-card.component.html',
   styleUrls: ['./weather-card.component.scss'],
 })
