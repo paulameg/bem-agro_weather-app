@@ -17,13 +17,16 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./search-bar.component.scss'],
 })
 export class SearchBarComponent {
-  @Output() search = new EventEmitter<string>();
-  city: string = '';
-  weatherData: any = null;
+  @Output() search = new EventEmitter<string>(); // Evento para enviar o valor da cidade ao app.component
+  city: string = ''; // Armazena o nome da cidade digitado pelo usuário
+  weatherData: any = null; //Armazena os dados do clima
 
+  // Método chamado quando o botão de busca é clicado
   onSearch() {
+
+    // Verifica se o campo de cidade não está vazio ou só com espaços
     if (this.city.trim()) {
-      this.search.emit(this.city.trim());
+      this.search.emit(this.city.trim()); // Emite o valor da cidade
     }
   }
 }

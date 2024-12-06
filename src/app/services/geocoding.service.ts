@@ -10,6 +10,7 @@ export class GeocodingService {
 
   constructor(private http: HttpClient) {}
 
+  // Método que busca coordenadas (latitude e longitude) de uma cidade
   getCoordinates(city: string): Observable<any> {
     return this.http.get(this.baseUrl, {
       params: {
