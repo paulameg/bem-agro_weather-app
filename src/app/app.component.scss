@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 16px;
   font-family: Roboto, sans-serif;
-
 }
 
 .custom-container {
@@ -16,6 +14,7 @@
   background-color: #FFF;
 }
 
+
 .loading-container,
 .weather-container,
 .map-container {
@@ -23,8 +22,15 @@
 }
 
 .map-container {
-  height: 400px;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
+
+
 
 .fixed-container {
   position: fixed;
