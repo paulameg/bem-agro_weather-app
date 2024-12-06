@@ -1,0 +1,63 @@
+.weather-card {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #69d5ff;
+
+
+  .mat-card-header {
+    color: white;
+    text-align: center;
+  }
+
+  .mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+
+  }
+
+  .icon-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .temperature {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-style: italic;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+
+    .detail-item {
+      text-align: center;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .detail-item strong {
+      font-weight: bold;
+      color: #ffeb3b;
+    }
+  }
+}
