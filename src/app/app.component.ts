@@ -7,6 +7,7 @@ import { WeatherCardComponent } from './components/weather-card/weather-card.com
 import { MapComponent } from './components/map/map.component';
 import { CommonModule } from '@angular/common';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; // Icone de carregamento
+import { MatCardModule } from '@angular/material/card';
 
 
 @Component({
@@ -18,6 +19,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'; /
     MapComponent,
     CommonModule,
     MatProgressSpinnerModule,
+    MatCardModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

@@ -1,19 +1,18 @@
-<app-search-bar (search)="fetchWeather($event)"></app-search-bar>
+<mat-card class="custom-container">
+  <app-search-bar (search)="fetchWeather($event)"></app-search-bar>
 
-<div *ngIf="isLoading" class="loading-container">
-  <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
-  <p>Carregando dados...</p>
-</div>
-
-<div *ngIf="hasSearched" class="weather-container">
-  <app-weather-card [weatherData]="weatherData"></app-weather-card>
-</div>
-
-
-<div *ngIf="hasSearched && !isLoading" class="map-container">
-  <div class="map-container">
-    <app-map [latitude]="latitude" [longitude]="longitude"></app-map>
+  <div *ngIf="isLoading" class="loading-container">
+    <mat-progress-spinner mode="indeterminate" diameter="50"></mat-progress-spinner>
+    <p>Carregando dados...</p>
   </div>
-</div>
 
+  <div *ngIf="hasSearched" class="weather-container">
+    <app-weather-card [weatherData]="weatherData"></app-weather-card>
+  </div>
 
+  <div *ngIf="hasSearched && !isLoading" class="map-container">
+    <div class="map-container">
+      <app-map [latitude]="latitude" [longitude]="longitude"></app-map>
+    </div>
+  </div>
+</mat-card>
