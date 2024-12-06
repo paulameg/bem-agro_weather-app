@@ -1,59 +1,53 @@
-# BemAgroWeatherApp
+# Bem Agro Weather App 🌦️
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
+[**Acesse o aplicativo em execução aqui!**](https://bem-agro-weather-app.vercel.app/)
 
-## Development server
+---
 
-To start a local development server, run:
+#### 📖 Português
 
-```bash
-ng serve
-```
+## Sobre o Projeto
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+O **Bem Agro Weather App** é uma aplicação de previsão do tempo que fornece informações meteorológicas em tempo real de qualquer cidade. Desenvolvido com uma interface moderna baseada em **Material Design**, o app exibe dados como temperatura, umidade, vento, descrição do clima e ícones representativos. Além disso, utiliza mapas interativos para localizar e destacar cidades pesquisadas.
 
-## Code scaffolding
+### Tecnologias Utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Angular (8+):** framework principal para desenvolvimento.
+- **Material Design:** para uma interface consistente e amigável.
+- **TypeScript:** linguagem principal do projeto.
+- **API OpenWeatherMap:** fornece informações meteorológicas.  
+  [Documentação](https://openweathermap.org/api)
+- **API Nominatim:** busca latitude e longitude das cidades.  
+  [Documentação](https://nominatim.org/release-docs/latest/api/Search/)
+- **Leaflet:** exibição interativa de mapas.  
+  [Documentação](https://leafletjs.com/)
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Desenvolvido com ❤️ por **Paula Takahashi**.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+#### 📖 English
 
-To build the project run:
+## About the Project
 
-```bash
-ng build
-```
+[**Access the live application here!**](https://bem-agro-weather-app.vercel.app/)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The **Bem Agro Weather App** is a weather forecast application that provides real-time weather information for any city. Built with a modern interface based on **Material Design**, the app displays data such as temperature, humidity, wind, weather descriptions, and representative icons. Additionally, it uses interactive maps to locate and highlight searched cities.
 
-## Running unit tests
+### Technologies Used
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- **Angular (8+):** main framework for development.
+- **Material Design:** for a consistent and user-friendly interface.
+- **TypeScript:** primary language of the project.
+- **API OpenWeatherMap:** provides weather information.  
+  [Documentation](https://openweathermap.org/api)
+- **API Nominatim:** fetches city latitude and longitude.  
+  [Documentation](https://nominatim.org/release-docs/latest/api/Search/)
+- **Leaflet:** interactive map display.  
+  [Documentation](https://leafletjs.com/)
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Developed with ❤️ by **Paula Takahashi**.
