@@ -49,6 +49,7 @@ export class AppComponent {
     (error) => {
       console.error('Erro ao buscar dados do clima:', error);
       this.isLoading = false;
+      alert('Não foi possível obter os dados do clima. Por favor, tente novamente mais tarde.');
     });
   }
 }

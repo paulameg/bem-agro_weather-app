@@ -20,6 +20,13 @@ export class MapComponent implements OnChanges {
   }
 
   private initializeMap(): void {
+
+    if (!this.latitude || !this.longitude) {
+      console.error('Coordenadas inválidas: latitude ou longitude estão ausentes.');
+      return;
+    }; // Tratamento de erro
+
+
     if (!this.map) {
       // Cria o mapa no elemento com id "map" e centraliza na posição inicial
       this.map = L.map('map').setView([this.latitude, this.longitude], 13);
