@@ -24,8 +24,13 @@ export class MapComponent implements OnChanges {
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
+        minZoom: 10,
         attribution: '© OpenStreetMap'
       }).addTo(this.map);
+
+      setTimeout(() => {
+        this.map.invalidateSize();
+      }, 100);
 
       // Criando e adicionando um marcador personalizado
       this.addCustomMarker(this.latitude, this.longitude);
